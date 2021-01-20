@@ -55,7 +55,8 @@ Config::define('WP_SITEURL', env('WP_SITEURL'));
 Config::define('CONTENT_DIR', '/app');
 Config::define('WP_CONTENT_DIR', $webroot_dir . Config::get('CONTENT_DIR'));
 Config::define('WP_CONTENT_URL', Config::get('WP_HOME') . Config::get('CONTENT_DIR'));
-
+//Change default themes
+Config::define( 'WP_DEFAULT_THEME', CONTENT_DIR . '/theme' );
 /**
  * DB settings
  */
@@ -98,6 +99,7 @@ Config::define('DISABLE_WP_CRON', true );
 Config::define('DISALLOW_FILE_EDIT', true);
 // Disable plugin and theme updates and installation from the admin
 Config::define('DISALLOW_FILE_MODS', true);
+
 
 /**
  * Debugging Settings
