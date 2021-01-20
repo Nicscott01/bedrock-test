@@ -63,7 +63,7 @@
     "wpackagist-plugin/wordpress-seo": "^15.6",
     "wpackagist-plugin/google-analytics-for-wordpress": "^7.14",
     "wpackagist-plugin/enable-media-replace": "^3.5",
-    "wpackagist-plugin/ewww-image-optimizer-cloud": "^6.0",
+    "wpackagist-plugin/ewww-image-optimizer": "^6.0",
     "wpackagist-plugin/redirection": "^5.0",
     "wpackagist-plugin/safe-svg": "^1.9"
   },
