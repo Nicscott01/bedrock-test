@@ -87,8 +87,16 @@
   },
   "scripts": {
     "post-root-package-install": [
-      "php -r \"copy('.env.example', '.env');\""
+      "php -r \"copy('.env.example', '.env');\"",
+	    "composer run remove-default"
     ],
+	"post-update-cmd": [
+    "composer run remove-default"
+],  
+	"remove-default": [
+		"rm -rf web/wp/wp-content/themes/*",
+		"rm -rf web/wp/wp-content/plugins/hello.php"
+	],
     "test": [
       "phpcs"
     ]
