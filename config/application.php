@@ -100,6 +100,11 @@ Config::define('DISALLOW_FILE_EDIT', true);
 // Disable plugin and theme updates and installation from the admin
 Config::define('DISALLOW_FILE_MODS', true);
 
+/**
+ *  Plugin Settings
+ */
+Config::define( 'GF_LICENSE_KEY', env('GF_LICENSE_KEY' ) );
+
 
 /**
  * Debugging Settings
